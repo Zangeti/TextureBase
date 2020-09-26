@@ -93,5 +93,5 @@ Follow the guide below to see how you can easily make your own texture pack!
 	  **1. Folders are always declared as tables (<foldername> = {},)**<br/>
 	  **2. Files are always declared as stings ("<filename>")**<br/>
 	  **3. Empty folders mean all of its .ogg, .png and .jpg contents have been retextured and exist the repective path in *\_\_texturepackfolder\_\_/data***<br/>
-	  **4. Folders with defined contents (whether that be files or other folders), contain retextured .ogg, .png and .jpg files in these defined folders / files<br/>
+	  **4. Folders with defined contents (whether that be files or other folders), contain retextured .ogg, .png and .jpg files in these defined folders / files**<br/>
 	  > A few more examples will follow, but they all follow the above fundamental guidelines.
