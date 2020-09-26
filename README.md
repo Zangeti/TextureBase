@@ -48,7 +48,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 - edit config.lua
     - Here you let the resource pack know which textures & sounds you have created in *\_\_texturepackfolder\_\_/data* and hence would like changed in game. You do this by changing the 'data' table in config.lua
 	- To let the program know you want *factorio/data/base/sound/spidertron/spidertron-activate.ogg* replaced by *\_\_texturepackfolder\_\_/data/base/sound/spidertron/spidertron-activate.ogg*, you write the following:
-	  ```lua
+		```lua
 		data = {
 			base = {
 				sound = {
@@ -58,7 +58,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 				},
 			},
 		}
-	  ```
+		```
 	  You can see how the path to the file to be changed is specified in config.lua, every directory bying a table, and files being strings (in quotation marks)
 		
 
