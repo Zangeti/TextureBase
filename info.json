@@ -1,0 +1,11 @@
+{
+    "name": "texturebase",
+    "version": "0.0.1",
+    "title": "TextureBase",
+    "author": "Zangeti",
+    "contact": "",
+    "homepage": "https://discord.gg/kC53xn2",
+    "factorio_version": "1.0",
+    "dependencies": ["base >= 1.0"],
+    "description": "Basis for Factorio Texture Packs"
+}
