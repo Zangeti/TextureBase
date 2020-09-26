@@ -74,6 +74,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 		}
 		```
 	  > Keep in mind your own *spidertron-activate.ogg* and *spidertron-deactivate.ogg* both have to exist in *\_\_texturepackfolder\_\_/data/base/sound/spidertron/* for the mod to replace the original sound files with your own! If you specify files in the config.lua data table that do not exist in *\_\_texturepackfolder\_\_/data/* your texture pack will throw a 'file not found' error upon loading the game.
-		
+	- if you wanted to change every spidertron sound stored in *factorio/data/base/sound/spidertron*, you luckily don't have write all of them out! The format below tells the texture pack to replace every sound in the *factorio/data/base/sound/spidertron* directory (and any subdirectories) with their *\_\_texturepackfolder\_\_/data* equivalents!
 
 
+	  > Pay special attention to how folders with listed contents will exclusively have these contents loaded into the game as textures/sounds, whilst when folder contents are not specified, all .ogg, .png and .jpg files are loaded into the game as textures. Once again, ensure that *\_\_texturepackfolder\_\_/data/* has a retextured file in *\_\_texturepackfolder\_\_/data/base/sound/spidertron* for every file in *factorio/data/base/sound/spidertron*!
