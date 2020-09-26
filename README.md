@@ -86,4 +86,11 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  > Pay special attention to how folders with listed contents will exclusively have these contents loaded into the game as textures/sounds, whilst when folder contents are not specified, all .ogg, .png and .jpg files are loaded into the game as textures. Once again, ensure that *\_\_texturepackfolder\_\_/data/* has a retextured file in *\_\_texturepackfolder\_\_/data/base/sound/spidertron* for every file in *factorio/data/base/sound/spidertron*!
+	  > Pay special attention to how folders with listed contents will exclusively have these contents loaded into the game as textures/sounds, whilst when folder contents are not specified, all .ogg, .png and .jpg files inside them are loaded into the game as textures. Once again, ensure that *\_\_texturepackfolder\_\_/data/base/sound/spidertron* contains a retextured file for every file in *factorio/data/base/sound/spidertron*, so your texture pack is not trying to assign textures to files that don't actually exist!
+
+    - At this point you have learnt the basic syntax of using the config.lua data table to let your resource pack know which textures / sounds you are replacing! The key rules are:
+	  **1. Folders are always declared as tables (<foldername> = {},)**
+	  **2. Files are always declared as stings ("<filename>")**
+	  **3. Empty folders mean all of its .ogg, .png and .jpg contents have been retextured and exist the repective path in *\_\_texturepackfolder\_\_/data***
+	  **4. Folders with defined contents (whether that be files or other folders), contain retextured .ogg, .png and .jpg files in these defined folders / files
+	  > A few more examples will follow, but they all follow the above fundamental guidelines.
