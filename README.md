@@ -59,7 +59,21 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  You can see how the path to the file to be changed is specified in config.lua, every directory bying a table, and files being strings (in quotation marks)
+	  You can see how the path to the file to be changed is specified in config.lua, every directory being a table, and files being strings (in quotation marks)
+	- if you wanted to change both deactivation & activation sound of the spidertron, both of which are found in *factorio/data/base/sound/spidertron/*, you would do so as follows
+		```lua
+		data = {
+			base = {
+				sound = {
+					spidertron = {
+						"spidertron-activate.ogg",
+						"spidertron-deactivate.ogg",
+					},
+				},
+			},
+		}
+		```
+	  Keep in mind your own *spidertron-activate.ogg* and *spidertron-deactivate.ogg* both have to exist in *\_\_texturepackfolder\_\_/data/base/sound/spidertron/* for the mod to replace the original sound files with your own! If you specify files in the config.lua data table that do not exist in *\_\_texturepackfolder\_\_/data/* your texture pack will throw a 'file not found' error upon loading the game with it enabled.
 		
 
 
