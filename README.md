@@ -52,7 +52,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 	  data = {
 	      base = {
 		      sound = {
-				spidertron = {
+			      spidertron = {
 				      "spidertron-activate.ogg",
 				  },
 			  },
