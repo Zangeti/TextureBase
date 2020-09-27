@@ -159,7 +159,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 - There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
 - You might also consider removing this README.md file along with other github files such as LICENSE from your texturepack.
 - Next Steps:
-	- Upload your creation
+	- Upload your creation. You might have to use Gdrive for this, as GitHub and https://mods.factorio.com/ do not allow uploading a bigger texturepack than 100Mb. You'll likely have to create a placeholder mod on https://mods.factorio.com/ with a texturepack download link. 
 	- Let me check out your texturepack by contacting me via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), or on the dedicated Discussion channel on the TextureBase mod page @ [https://mods.factorio.com/mod/texturebase](https://mods.factorio.com/mod/texturebase)
 	- Start over! You can make more than one texturepack (though they can't be loaded at the same time) ;)
 
@@ -170,7 +170,8 @@ Follow the guide below to see how you can easily make your own texture pack!
 # Still having issues, Bugfixes, Feature Requests
 
 
-If you are still having issues creating your resourcepack, check out my example resourcepacks @ [https://mods.factorio.com/mod/shadowworld](https://mods.factorio.com/mod/shadowworld), [https://mods.factorio.com/mod/hologramworld](https://mods.factorio.com/mod/hologramworld) and [https://mods.factorio.com/mod/pixelperfect](https://mods.factorio.com/mod/pixelperfect).<br/>
+If you are still having issues creating your resourcepack, download my example resourcepacks @ [https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing](https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing), [https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing](https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing) and [https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing](https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing).<br/>
+I tried uploading them to https://mods.factorio.com/ but a 100Mb mod size limit prevented this. Google Drive comes for the rescue!<br/>
 <br/>
 Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2). Here you can get further help, report bugs, request features and find people to play with!
 
