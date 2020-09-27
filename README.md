@@ -157,9 +157,9 @@ Follow the guide below to see how you can easily make your own texture pack!
 # Still having issues, Bugfixes, Feature Requests
 
 
-If you are still concerned about the data table in config.lua, where your retextured .ogg, .png and .jpg files need to be saved in the texturepack, or have other concerns please take a look at my example texture packs  check out my example texturepacks, don't hesitate to contact me on issues you are having via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2)
-Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2) if you want to report bugfixes (shiny role waiting for you!), or have ideas for features to make creating factorio resourcepacks even easier!
-Why not take a look if you are just interested; you might find someone to play with!
+If you are still concerned about the data table in config.lua, where your retextured .ogg, .png and .jpg files need to be saved in the texturepack, or have other concerns please take a look at my example texture packs  check out my example texturepacks, don't hesitate to contact me on issues you are having via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2)<br/>
+Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2) if you want to report bugfixes (shiny role waiting for you!), or have ideas for features to make creating factorio resourcepacks even easier!<br/>
+Why not take a look if you are just interested; you might find someone to play with!<br/>
 
 
 ---
