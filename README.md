@@ -96,3 +96,94 @@ Follow the guide below to see how you can easily make your own texture pack!
 	  **3.	Undefined folder contents mean all of that folders .ogg, .png and .jpg contents have been retextured and exist the repective path in *\_\_texturepackfolder\_\_/data***<br/>
 	  **4.	Folders with defined contents (whether that be files or other folders), contain retextured .ogg, .png and .jpg files in these defined folders / files**<br/>
 	  > A few more examples will follow, but they all follow the above fundamental guidelines.
+	
+	- The below example is telling the resource pack you are retexturing/changing *accumulator.png* and *hr-accumulator.png* in *factorio/data/base/graphics/entity/accumulator/*, along with all .ogg, .png and .jpg files in, *factorio/data/base/sound/spidertron/*, *factorio/data/core/sound/* and *factorio/data/boblogistics/graphics/gui/*
+		```lua
+		data = {
+			base = {
+				graphics = {
+					entity = {
+						accumulator = {
+							"accumulator.png",
+							"hr-accumulator.png"
+						},
+					},
+				},
+				sound = {
+					spidertron = {
+						
+					},
+				},
+			},
+			core = {
+				sound = {
+					
+				},
+			},
+			boblogistics = {
+				graphics = {
+					gui = {
+						
+					},
+				},
+			},
+		}
+		```
+	  > Note that (as of version 1.0.0) boblogistics only has 1 .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
+	  
+	- The this system for the data table in config.lua may seem overcomplicated. However, especially when resource packs replace a vast number of the games assets, the data table gets really simple. After all, if you wanted to replace all .ogg, .png and .jpg files in factorio/base, you would let the resourcepack know as follows:
+		```lua
+		data = {
+			base = {
+				
+			},
+		}
+		```
+	  > Thats a pretty short data table considering the hundreds, if not thousands of images/.ogg sound files in *factorio/data/base/* that the resource pack will try to replace! One final reminder, that telling the mod you are replacing every .ogg, .png and .jpg file in *factorio/data/base/*, means you need an equivalent for eac of these files in a mirrored path in *\_\_texturepackfolder\_\_/data/base/*
+
+
+### You're done!!!
+
+- Congrats! you have created a factorio resource pack with TextureBase!
+- There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
+- Next Steps:
+	- Upload your creation
+	- Let me check out your texturepack by contacting me via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), or on the dedicated Discussion channel on the TextureBase mod page @ [https://mods.factorio.com/mod/texturebase](https://mods.factorio.com/mod/texturebase)
+	- Start over! You can make more than one texturepack (though they can't be loaded at the same time) ;)
+
+
+---
+
+# Still having issues, Bugfixes, Feature Requests
+
+
+If you are still concerned about the data table in config.lua, where your retextured .ogg, .png and .jpg files need to be saved in the texturepack, or have other concerns please take a look at my example texture packs  check out my example texturepacks, don't hesitate to contact me on issues you are having via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2)
+Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2) if you want to report bugfixes (shiny role waiting for you!), or have ideas for features to make creating factorio resourcepacks even easier!
+Why not take a look if you are just interested; you might find someone to play with!
+
+
+---
+
+# License
+
+MIT License
+
+Copyright (c) 2020 Allomimus
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
