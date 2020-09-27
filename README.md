@@ -19,12 +19,12 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 ### Download TextureBase!
 
- - place TextureBase into the factorio/data mods folder
- - the mod does nothing on its own; follow the next steps to make a texturepack with it!
+ - Place TextureBase into the factorio/data mods folder
+ - The mod does nothing on its own; follow the next steps to make a texturepack with it!
 
 ### Give your Texture Pack a cool name!
 
-- rename the TextureBase mod folder to what you want to call your texture pack in the format of '<texture_pack_name>_<version (x.y.z)>'. Your name must be lower case!
+- Rename the TextureBase mod folder to what you want to call your texture pack in the format of '<texture_pack_name>_<version (x.y.z)>'. Your name must be lower case!
 - edit info.json
     - set "name" to the lower case mod name of your folder
 	- set "version" to the version of your texturepack (usually 0.0.1 if you are creating a new texture pack)
@@ -36,8 +36,8 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 ### Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!
 
-- For the texturepack to apply your textures correctly, you need to save them in a specific format & location. follow the next steps
-- locate the data folder inside of your texturepack (TextureBase). It should be empty.
+- For the texturepack to apply your textures correctly, you need to save them in a specific format & location. Follow the next steps:
+- Locate the data folder inside of your texturepack (TextureBase). It should be empty.
 - Think of this *\_\_texturepackfolder\_\_/data* directory as a duplicate of the *factorio/data* directory (mods folder). Any textures created in this *\_\_texturepackfolder\_\_/data* **must have the same relative paths as their originals to factorio/data**
 	- for example, to retexture a nuclear explosion, you would:
         - find the directory in which the nuclear explosion sprites are stored, which is *factorio/data/base/graphics/entity/nuke-explosion/*
@@ -46,9 +46,9 @@ Follow the guide below to see how you can easily make your own texture pack!
 - Mods may have file trees with different structures to base or core.
     - You must nonetheless mirror the file tree of the respective mod.
     - e.g. to change the logistic chest texture in [boblogistics](https://mods.factorio.com/mod/boblogistics) found at *factorio/data/boblogistics/graphics/entity/logistic-chest/*, you would have to add your retextured files to *\_\_texturepackfolder\_\_/data/boblogistics/graphics/entity/logistic-chest/*
-- sounds work the same! To change the spidertron activation sound (*factorio/data/base/sound/spidertron/spidertron-activate.ogg*), place your new sound file to *\_\_texturepackfolder\_\_/data/base/sound/spidertron/spidertron-activate.ogg*
+- Sounds work the same! To change the spidertron activation sound (*factorio/data/base/sound/spidertron/spidertron-activate.ogg*), place your new sound file to *\_\_texturepackfolder\_\_/data/base/sound/spidertron/spidertron-activate.ogg*
 	
-- if you are planning on retexturing large parts of base or another mod, I would recommend copying the mod directory found in *factorio/data* to *\_\_texturepackfolder\_\_/data*, and deleting any files / directories that do not contain images or .ogg sound files (or textures/sounds you don't want to change)!
+- If you are planning on retexturing large parts of base or another mod, I would recommend copying the mod directory found in *factorio/data* to *\_\_texturepackfolder\_\_/data*, and deleting any files / directories that do not contain images or .ogg sound files (or textures/sounds you don't want to change)!
 
 
 ### Let your texture pack know which files you have retextured!
@@ -70,7 +70,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 		}
 		```
 	  > You can see how the path to the file to be changed is specified in config.lua, every directory being a table, and files being strings (in quotation marks)
-	- if you wanted to change both deactivation & activation sound of the spidertron, both of which are found in the *factorio/data/base/sound/spidertron/* directory, you would do so as follows
+	- If you wanted to change both deactivation & activation sound of the spidertron, both of which are found in the *factorio/data/base/sound/spidertron/* directory, you would do so as follows
 		```lua
 		data = {
 			base = {
@@ -84,7 +84,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 		}
 		```
 	  > Keep in mind your own *spidertron-activate.ogg* and *spidertron-deactivate.ogg* both have to exist in *\_\_texturepackfolder\_\_/data/base/sound/spidertron/* for the mod to replace the original sound files with your own! If you specify files in the config.lua data table that do not exist in *\_\_texturepackfolder\_\_/data/* your texture pack will throw a 'file not found' error upon loading the game.
-	- if you wanted to change every spidertron sound stored in *factorio/data/base/sound/spidertron*, you luckily don't have write all of them out! The format below tells the texture pack to replace every sound in the *factorio/data/base/sound/spidertron* directory (and any subdirectories) with their *\_\_texturepackfolder\_\_/data* equivalents!
+	- If you wanted to change every spidertron sound stored in *factorio/data/base/sound/spidertron*, you luckily don't have write all of them out! The format below tells the texture pack to replace every sound in the *factorio/data/base/sound/spidertron* directory (and any subdirectories) with their *\_\_texturepackfolder\_\_/data* equivalents!
 		```lua
 		data = {
 			base = {
