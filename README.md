@@ -3,6 +3,15 @@ TextureBase is a mod that make it easy to create Texture Packs in factorio.
 TextureBase can override textures, but also sound .ogg files to create a custom experience!
 Follow the guide below to see how you can easily make your own texture pack!
 
+#### Contents
+ - **[Steps](#steps)**
+	- [Download TextureBase!](#download-texturebase!)
+	- [Give your Texture Pack a cool name!](#download-texturebase!)
+	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-\_\_texturepackfolder\_\_/data-to-add-your-own-textures-&-sounds!)
+	- [Let your texture pack know which files you have retextured!](#let-your-texture-pack-know-which-files-you-have-retextured!)
+ - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues,-bugfixes,-feature-requests)**
+ - **[License](#license)**
+
 ---
 
 # Steps
@@ -10,7 +19,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 ### Download TextureBase!
 
  - place TextureBase into the factorio/data mods folder
- - the mod does nothing on its own; now I will show how you can make a texturepack with its
+ - the mod does nothing on its own; follow the next steps to make a texturepack with it!
 
 ### Give your Texture Pack a cool name!
 
@@ -152,6 +161,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 	- Let me check out your texturepack by contacting me via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), or on the dedicated Discussion channel on the TextureBase mod page @ [https://mods.factorio.com/mod/texturebase](https://mods.factorio.com/mod/texturebase)
 	- Start over! You can make more than one texturepack (though they can't be loaded at the same time) ;)
 
+**[Back To Top](#texturebase)**
 
 ---
 
@@ -162,6 +172,7 @@ If you are still having issues creating your resourcepack, check out my example 
 <br/>
 Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2). Here you can get further help, report bugs, request features and find people to play with!
 
+**[Back To Top](#texturebase)**
 
 ---
 
@@ -188,3 +199,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+**[Back To Top](#texturebase)**
