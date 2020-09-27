@@ -7,7 +7,7 @@ Follow the guide below to see how you can easily make your own texture pack!
  - **[Steps](#steps)**
 	- [Download TextureBase!](#download-texturebase)
 	- [Give your Texture Pack a cool name!](#give-your-texture-pack-a-cool-name)
-	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-texturepackfolder-data-to-add-your-own-textures--sounds)
+	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-texturepackfolder/data-to-add-your-own-textures--sounds)
 	- [Let your texture pack know which files you have retextured!](#let-your-texture-pack-know-which-files-you-have-retextured)
  - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
  - **[License](#license)**
@@ -33,7 +33,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 - edit config.lua
     - set resource_pack_name to what you wrote for "name" in info.json
 
-### Create duplicate file tree in *texturepackfolder data* to add your own textures & sounds!
+### Create duplicate file tree in *texturepackfolder/data* to add your own textures & sounds!
 
 - For the texturepack to apply your textures correctly, you need to save them in a specific format & location. follow the next steps
 - locate the data folder inside of your texturepack (TextureBase). It should be empty.
