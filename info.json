@@ -7,5 +7,5 @@
     "homepage": "https://discord.gg/kC53xn2",
     "factorio_version": "1.0",
     "dependencies": ["base >= 1.0"],
-    "description": "Basis for Factorio Texture Packs"
+    "description": "TextureBase makes it easy to create your own Factorio Texturepacks! Effortlessly change Sounds & Textures of the Base Game & Mods with this streamlined Tool!"
 }
