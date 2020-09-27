@@ -180,7 +180,7 @@ Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53
 
 MIT License
 
-Copyright (c) 2020 Allomimus
+Copyright (c) 2020 Zangeti
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
