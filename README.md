@@ -160,7 +160,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 If you are still having issues creating your resourcepack, check out my example resourcepacks @ [https://mods.factorio.com/mod/shadowworld](https://mods.factorio.com/mod/shadowworld), [https://mods.factorio.com/mod/hologramworld](https://mods.factorio.com/mod/hologramworld) and [https://mods.factorio.com/mod/pixelperfect](https://mods.factorio.com/mod/pixelperfect).<br/>
 <br/>
-Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2). Here you can report bugs, request features and find people to play with!
+Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2). Here you can get further help, report bugs, request features and find people to play with!
 
 
 ---
