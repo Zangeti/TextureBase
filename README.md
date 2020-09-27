@@ -5,9 +5,9 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 #### Contents
  - **[Steps](#steps)**
-	- [Download TextureBase!](#download-texturebase-&-h)
+	- [Download TextureBase!](#download-texturebase)
 	- [Give your Texture Pack a cool name!](#give-your-texture-pack-a-cool-name)
-	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-\_\_texturepackfolder\_\_-data-to-add-your-own-textures-sounds)
+	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-\_\_texturepackfolder\_\/data-to-add-your-own-textures--sounds)
 	- [Let your texture pack know which files you have retextured!](#let-your-texture-pack-know-which-files-you-have-retextured)
  - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
  - **[License](#license)**
@@ -16,7 +16,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 # Steps
 
-### Download TextureBase! & h
+### Download TextureBase!
 
  - place TextureBase into the factorio/data mods folder
  - the mod does nothing on its own; follow the next steps to make a texturepack with it!
