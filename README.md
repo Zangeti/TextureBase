@@ -21,9 +21,6 @@ Follow the guide below to see how you can easily make your own texture pack!
  - place TextureBase into the factorio/data mods folder
  - the mod does nothing on its own; follow the next steps to make a texturepack with it!
 
-**[Back To Top](#texturebase)**
-
-
 ### Give your Texture Pack a cool name!
 
 - rename the TextureBase mod folder to what you want to call your texture pack in the format of '<texture_pack_name>_<version (x.y.z)>'. Your name must be lower case!
@@ -35,9 +32,6 @@ Follow the guide below to see how you can easily make your own texture pack!
 	- edit the other fields as you see fit... if you are retexturing another mod, I recommend listing that mod as an optional dependency, to guarantee your texture pack is loaded after the mod you are retexturing is.
 - edit config.lua
     - set resource_pack_name to what you wrote for "name" in info.json
-
-**[Back To Top](#texturebase)**
-
 
 ### Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!
 
@@ -54,8 +48,6 @@ Follow the guide below to see how you can easily make your own texture pack!
 - sounds work the same! To change the spidertron activation sound (*factorio/data/base/sound/spidertron/spidertron-activate.ogg*), place your new sound file to *\_\_texturepackfolder\_\_/data/base/sound/spidertron/spidertron-activate.ogg*
 	
 - if you are planning on retexturing large parts of base or another mod, I would recommend copying the mod directory found in *factorio/data* to *\_\_texturepackfolder\_\_/data*, and deleting any files / directories that do not contain images or .ogg sound files (or textures/sounds you don't want to change)!
-
-**[Back To Top](#texturebase)**
 
 
 ### Let your texture pack know which files you have retextured!
@@ -157,8 +149,6 @@ Follow the guide below to see how you can easily make your own texture pack!
 		}
 		```
 	  > Thats a pretty short data table considering the hundreds, if not thousands of images/.ogg sound files in *factorio/data/base/* that the resource pack will try to replace! One final reminder, that telling the mod you are replacing every .ogg, .png and .jpg file in *factorio/data/base/*, means you need a replacement for each of these files in the mirrored path in *\_\_texturepackfolder\_\_/data/base/*
-
-**[Back To Top](#texturebase)**
 
 
 ### You're done!!!
