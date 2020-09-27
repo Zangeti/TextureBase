@@ -10,6 +10,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 	- [Give your Texture Pack a cool name!](#give-your-texture-pack-a-cool-name)
 	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-\_\_texturepackfolder\_\_data-to-add-your-own-textures--sounds)
 	- [Let your texture pack know which files you have retextured!](#let-your-texture-pack-know-which-files-you-have-retextured)
+	- [You're done!!!](#youre-done)
  - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
  - **[License](#license)**
 
