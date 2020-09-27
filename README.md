@@ -129,7 +129,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  > Note that (as of version 1.0.0) boblogistics only has 1 .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
+	  > Note that (as of version 1.0.0) boblogistics only has one .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
 	  
 	- The this system for the data table in config.lua may seem overcomplicated. However, especially when resource packs replace a vast number of the games assets, the data table gets really simple. After all, if you wanted to replace all .ogg, .png and .jpg files in factorio/base, you would let the resourcepack know as follows:
 		```lua
@@ -139,7 +139,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  > Thats a pretty short data table considering the hundreds, if not thousands of images/.ogg sound files in *factorio/data/base/* that the resource pack will try to replace! One final reminder, that telling the mod you are replacing every .ogg, .png and .jpg file in *factorio/data/base/*, means you need an equivalent for eac of these files in a mirrored path in *\_\_texturepackfolder\_\_/data/base/*
+	  > Thats a pretty short data table considering the hundreds, if not thousands of images/.ogg sound files in *factorio/data/base/* that the resource pack will try to replace! One final reminder, that telling the mod you are replacing every .ogg, .png and .jpg file in *factorio/data/base/*, means you need a replacement for each of these files in the mirrored path in *\_\_texturepackfolder\_\_/data/base/*
 
 
 ### You're done!!!
