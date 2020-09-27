@@ -157,7 +157,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 - Congrats! you have created a factorio resource pack with TextureBase!
 - There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
-- You might also consider removing this README.md file from your texturepack.
+- You might also consider removing this README.md file along with other github files such as LICENSE from your texturepack.
 - Next Steps:
 	- Upload your creation
 	- Let me check out your texturepack by contacting me via my modding discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), or on the dedicated Discussion channel on the TextureBase mod page @ [https://mods.factorio.com/mod/texturebase](https://mods.factorio.com/mod/texturebase)
