@@ -38,7 +38,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 
 - For the texturepack to apply your textures correctly, you need to save them in a specific format & location. Follow the next steps:
 - Locate the data folder inside of your texturepack (the folder you just renamed). That data folder should be empty (we will from now on call this data folder *\_\_texturepackfolder\_\_/data*).
-- Think of this *\_\_texturepackfolder\_\_/data* directory as a duplicate of the *factorio/data* directory (mods folder). Any textures created in this *\_\_texturepackfolder\_\_/data* **must have the same relative paths as their originals to factorio/data**
+- Think of this *\_\_texturepackfolder\_\_/data* directory as a duplicate of the *factorio/data* directory (mods folder). **Any textures created in this *\_\_texturepackfolder\_\_/data* must have the same relative paths as their originals to factorio/data**
 	- for example, to retexture a nuclear explosion, you would:
         - find the directory in which the nuclear explosion sprites are stored, which is *factorio/data/base/graphics/entity/nuke-explosion/*
 	    - mirror the file tree in *\_\_texturepackfolder\_\_/data*, such that the directory *\_\_texturepackfolder\_\_/data/base/graphics/entity/nuke-explosion/* exists
