@@ -102,7 +102,7 @@ Follow the guide below to see how you can easily make your own texture pack!
     - At this point you have learnt the basic syntax of using the config.lua data table to let your resource pack know which textures / sounds you are replacing!<br/>
 	  <br/>
 	  **The Key Rules are:**<br/>
-	  **1.	Folders are always declared as tables (\<foldername\> = {}, or if special characters are in the foldername e.g. .,%+-/\* as ["\<foldername\>"] = {},)**<br/>
+	  **1.	Folders are always declared as tables (\<foldername\> = {}, or if special characters (such as .,%+-/\*) are in the foldername ["\<foldername\>"] = {},)**<br/>
 	  **2.	Files are always declared as stings ("\<filename\>")**<br/>
 	  **3.	Undefined folder contents mean all of that folders .ogg, .png and .jpg contents have been retextured and exist the repective path in *\_\_texturepackfolder\_\_/data***<br/>
 	  **4.	Folders with defined contents (whether that be files or other folders), contain retextured .ogg, .png and .jpg files in these defined folders / files**<br/>
@@ -143,7 +143,8 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  > Note that the use of '["copper-ore"]'. This is the format in which foldernames need to be written down that include special characters, in this case a dash ("-"). Also note that (as of version 1.0.0) boblogistics only has one .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
+	  > Note that the use of '["copper-ore"]'. This is the format in which foldernames need to be written down that include special characters, in this case a dash ("-").
+	  > Also note that (as of version 1.0.0) boblogistics only has one .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
 	  
 	- The this system for the data table in config.lua may seem overcomplicated. However, especially when resource packs replace a vast number of the games assets, the data table gets really simple. After all, if you wanted to replace all .ogg, .png and .jpg files in factorio/base, you would let the resourcepack know as follows:
 		```lua
