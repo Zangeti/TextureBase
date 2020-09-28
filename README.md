@@ -143,7 +143,7 @@ Follow the guide below to see how you can easily make your own texture pack!
 			},
 		}
 		```
-	  > Note that the use of '["copper-ore"]'. This is the format in which foldernames need to be written down that include special characters, in this case a dash ("-").
+	  >> Note that the use of '["copper-ore"]'. This is the format in which foldernames need to be written down that include special characters, in this case a dash ("-").
 	  
 	  > Also note that (as of version 1.0.0) boblogistics only has one .png file in *boblogistics/graphics/gui/* *(checkbox.png)*. data = {boblogistics = {graphics = {gui = {},},},} (as above) is therefore synonymous to writing data = {boblogistics = {graphics = {gui = {"checkbox.png",},},},}!
 	  
