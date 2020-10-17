@@ -180,7 +180,7 @@ Don't be intimidated by the README length; a vast majority is dedicated towards 
 
 ### Attributes
 
-**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as higher res pictures than the original or excluding certain filenames).
+**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as higher res pictures than the original or excluding certain filenames).<br/>
 If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](#youre-done)**.<br/>
 <br/>
 Attributes are effectively custom keywords you can use in the config.lua data table for custom behaviour in terms of which files are retextured & which aren't
