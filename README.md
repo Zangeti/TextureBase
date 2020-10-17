@@ -618,7 +618,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	  > the 'etc' is not actual lua syntax; there are many more folders in *data/base/graphics/entity/* that would need to be listed, but the list would be too unsightly.
+  > the 'etc' is not actual lua syntax; there are many more folders in *data/base/graphics/entity/* that would need to be listed, but the list would be too unsightly.
 	
 - Wild Cards mean that the below example...
 	```lua
@@ -660,8 +660,8 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 	For example:
 	In the first of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.
 	In the second of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.
-
-
+<br/>
+<br/>
 - Here is a slightly more complex example involving Wild Cards:
 	```lua
 	data = {
@@ -699,7 +699,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	  > Here, all we are doing is retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age". All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
+  > Here, all we are doing is retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age". All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
 
 **[Back To Top](#texturebase)**
 
