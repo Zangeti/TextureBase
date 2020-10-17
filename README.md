@@ -1,8 +1,8 @@
 # TextureBase
-TextureBase is a mod that make it easy to create Texture Packs in factorio.
-TextureBase can override textures, but also sound .ogg files to create a custom experience!
-Follow the guide below to see how you can easily make your own texture pack!
-Don't be intimidated this guide's length; a vast amount is dedicated towards explaining [Attributes](#attributes) & [Wild Cards](#wild-cards-), an optional tool you don't have to use for your texturepack & giving lots of examples!
+TextureBase is a mod that make it easy to create Texture Packs in factorio.<br/>
+TextureBase can override textures, but also sound .ogg files to create a custom experience!<br/>
+Follow the guide below to see how you can easily make your own texture pack!<br/>
+Don't be intimidated this guide's length; a vast majority is dedicated towards explaining [Attributes](#attributes) & [Wild Cards](#wild-cards-), an optional tool you don't have to use for your texturepack & giving lots of examples!
 
 > Why not check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2) and the factorio mod portal @ [https://mods.factorio.com/mod/texturebase](https://mods.factorio.com/mod/texturebase) for more info
 
