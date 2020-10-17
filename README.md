@@ -475,7 +475,6 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 			graphics = {
 				__settings__ = {
 					exclude_names = {"*shadow*", "*reflection*", "*mask*"},
-					default_include = true
 				},
 				
 				accumulator = {
