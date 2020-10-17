@@ -662,6 +662,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 	In the second of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.
 <br/>
 <br/>
+
 - Here is a slightly more complex example involving Wild Cards:
 	```lua
 	data = {
