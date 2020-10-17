@@ -451,9 +451,11 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-   upscale allows retextured images to have a higher resolution than their original. upscale = 2 means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture. You can even downscale images with values duch as upscale = 0.5!
+   upscale allows retextured images to have a higher resolution than their original. upscale = 2 means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture. You can even downscale images with values duch as upscale = 0.5!<br/>
    Note that upscale is somewhat experimental! You may get a variety of errors when using upscale, such as that below:
+   
    ![Factorio Sprite Resolution Error](https://user-images.githubusercontent.com/45295229/95661099-dd0cc400-0b2c-11eb-8ddd-6bc7c613e119.png)
+   
    Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
 
 
