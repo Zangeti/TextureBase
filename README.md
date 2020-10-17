@@ -241,40 +241,40 @@ Current attributes are:
 	**\_\_settings\_\_ attributes apply to all files inside the folder / file in which the attribute is declared.**
 	  
 	Therefore:
-		```lua
-		data = {
+	```lua
+	data = {
+		__settings__ = {
+			setting_name_1 = setting_value_1,
+		},
+		
+		base = {
+			["example_image.png"] = { },
+		},
+	}
+		```
+	has the same result as:
+	```lua
+	data = {
+		base = {
 			__settings__ = {
 				setting_name_1 = setting_value_1,
 			},
-			
-			base = {
-				["example_image.png"] = { },
-			},
-		}
-		```
-	has the same result as:
-		```lua
-		data = {
-			base = {
-				__settings__ = {
-					setting_name_1 = setting_value_1,
-				},
-				["example_image.png"] = { },
-			},
-		}
-		```
+			["example_image.png"] = { },
+		},
+	}
+	```
 	which has the same result as:
-		```lua
-		data = {
-			base = {
-				["example_image.png"] = {
-					__settings__ = {
-						setting_name_1 = setting_value_1
-					},
+	```lua
+	data = {
+		base = {
+			["example_image.png"] = {
+				__settings__ = {
+					setting_name_1 = setting_value_1
 				},
 			},
-		}
-		```
+		},
+	}
+	```
 	In the top 2 examples above, *example_image.png* is in a folder whose \_\_settings\_\_ attribute prescibes for all of the retextured files inside of it have setting_name_1 applied at setting_name_1. In the last example, the \_\_settings\_\_ attribute is directly applied to the image itself (and not the contents of a folder, the image happens to be in).
 	Note *example_image.png* does not actually exist in *data/base/*; it only demonstrates how \_\_settings\_\_ attributes are applied to retextured images. setting_name_1 and setting_name_1 are also only placeholders for actual settings (see below)
 
@@ -282,75 +282,75 @@ Current attributes are:
 	**\_\_settings\_\_ attributes can 'stack' up, down a path.**
 	
 	Therefore:
-		```lua
-		data = {
+	```lua
+	data = {
+		__settings__ = {
+			setting_name_1 = setting_value_1,
+		},
+		
+		base = {
 			__settings__ = {
-				setting_name_1 = setting_value_1,
+				setting_name_2 = setting_value_2,
 			},
 			
-			base = {
+			["example_image.png"] = {
 				__settings__ = {
-					setting_name_2 = setting_value_2,
-				},
-				
-				["example_image.png"] = {
-					__settings__ = {
-						setting_name_3 = setting_value_3,
-					},
+					setting_name_3 = setting_value_3,
 				},
 			},
-		}
-		```
+		},
+	}
+	```
 	has the same result as:
-	   ```lua
-		data = {
-			base = {	
-				["example_image.png"] = {
-					__settings__ = {
-						setting_name_1 = setting_value_1,
-						setting_name_2 = setting_value_2,
-						setting_name_3 = setting_value_3,
-					},
+   ```lua
+	data = {
+		base = {	
+			["example_image.png"] = {
+				__settings__ = {
+					setting_name_1 = setting_value_1,
+					setting_name_2 = setting_value_2,
+					setting_name_3 = setting_value_3,
 				},
 			},
-		}
-		```
+		},
+	}
+	```
 	Settings for an image accumulate along its path.
 
 
 	**\_\_settings\_\_ attributes can overwrite each other down a path**
 	Therefore:
-		```lua
-		data = {
+	```lua
+	data = {
+		__settings__ = {
+			setting_name_1 = setting_value_1,
+		},
+		
+		base = {
 			__settings__ = {
-				setting_name_1 = setting_value_1,
+				setting_name_1 = setting_value_2,
 			},
 			
-			base = {
+			["example_image.png"] = {
 				__settings__ = {
-					setting_name_1 = setting_value_2,
-				},
-				
-				["example_image.png"] = {
-					__settings__ = {
-						setting_name_1 = setting_value_3,
-					},
+					setting_name_1 = setting_value_3,
 				},
 			},
-		}
-		```
+		},
+	}
+	```
 	has the same result as:
-		```lua
-		data = {
-			base = {
-				["example_image.png"] = {
-					__settings__ = {
-						setting_name_1 = setting_value_3,
-					},
+	```lua
+	data = {
+		base = {
+			["example_image.png"] = {
+				__settings__ = {
+					setting_name_1 = setting_value_3,
 				},
 			},
-		}
-		```
+		},
+	}
+	```
 	setting_name_1 is overwritten down the path towards *example_image.png*.
 
 - Remember the contents of a folder. Folders that do not contain anything (but a \_\_settings\_\_ attribute) have that \_\_settings\_\_ attribute applied to all of the .png, .jpg and .ogg files in it, as a folder with undefined contents means all of its contents have been retextured. A folder with defined contents (other than a \_\_settings\_\_ attribute), will only have these settings applied to its defined contents!
