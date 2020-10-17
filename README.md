@@ -433,9 +433,6 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
   > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
-   
-   Note, you can use [Wild Cards](#wild-cards-) for strings inside exclude_names={} table
-
 <br/>
 	
 - ***upscale = int (default = 1)***
@@ -454,12 +451,12 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-   upscale allows retextured images to have a higher resolution than their original. upscale = 2 means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture. You can even downscale images with values duch as upscale = 0.5!<br/>
-   Note that upscale is somewhat experimental! You may get a variety of errors when using upscale, such as that below:
+   *upscale* allows retextured images to have a higher resolution than their original. *upscale = 2* means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture.<br/>
+   **Note that upscale is somewhat experimental!** You may get a variety of errors when using upscale, such as that below:
    
    ![Factorio Sprite Resolution Error](https://user-images.githubusercontent.com/45295229/95661099-dd0cc400-0b2c-11eb-8ddd-6bc7c613e119.png)
    
-   Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
+	> Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
 
 
 > Note that to exclude certain images images / folders from a setting defined in a superceding folder, you will have to set the settings in the \_\_settings\_\_ attribute to their defaults
