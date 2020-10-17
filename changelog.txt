@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 17.10.2020
+  Additions:
+    - Settings Attribute
+    - Upscaling of many textures from their original sizes
+    - Exclusion of file names
+    - Wild Cards
+
+  Changes:
+    - Definition of images in config.lua data table
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 26.09.2020
   Additions:
