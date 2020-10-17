@@ -203,9 +203,9 @@ data = {
 Current attributes are:
  - \_\_settings\_\_
 
----
+<br/>
 
-#### \_\_settings\_\_ attribute; customising what/how the resource pack retextures by specific settings
+#### The \_\_settings\_\_ Attribute; Customising What / How the Resource Pack Retextures by Specific Settings
 
 - The use of the \_\_settings\_\_ attribute in the config.lua data table further customizes what/how the resource pack retextures.
 - See the below example for one use of \_\_settings\_\_. Here we are retexturing every .png, .jpg and .ogg file in *data/base/graphics*, except for those with "shadow" or "reflection" in their name. This is very useful when you are using a script to modify images in a folder, but are omitting those with a certain string in their name.
@@ -235,9 +235,10 @@ Current attributes are:
 	
 - The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the _\_settings\_\_ attribute applied to these specific subdirectories / images
 
-- Simple Rules of how \_\_settings\_\_ attributes work.
+
+- **Simple Rules of how \_\_settings\_\_ Attributes work.**
 	 
-	**\_\_settings\_\_ attributes apply to all files inside the folder / file in which the attribute is declared.**
+	**\_\_settings\_\_ Attributes Apply to all Files inside the Folder / File in Which the Attribute is Declared.**
 	  
 	Therefore:
 	```lua
@@ -278,7 +279,7 @@ Current attributes are:
 	Note *example_image.png* does not actually exist in *data/base/*; it only demonstrates how \_\_settings\_\_ attributes are applied to retextured images. setting_name_1 and setting_name_1 are also only placeholders for actual settings (see below)
 
 
-	**\_\_settings\_\_ attributes can 'stack' up, down a path.**
+	**\_\_settings\_\_ Attributes can 'stack' Up, Down a Path.**
 	
 	Therefore:
 	```lua
@@ -317,7 +318,7 @@ Current attributes are:
 	Settings for an image accumulate along its path.
 
 
-	**\_\_settings\_\_ attributes can overwrite each other down a path**
+	**\_\_settings\_\_ Attributes can Overwrite each other Down a Path**
 	Therefore:
 	```lua
 	data = {
@@ -354,9 +355,9 @@ Current attributes are:
 
 - Remember the contents of a folder. Folders that do not contain anything (but a \_\_settings\_\_ attribute) have that \_\_settings\_\_ attribute applied to all of the .png, .jpg and .ogg files in it, as a folder with undefined contents means all of its contents have been retextured. A folder with defined contents (other than a \_\_settings\_\_ attribute), will only have these settings applied to its defined contents!
 
----
+<br/>
 
-** Setting list **
+**Setting List**
 
 A list of all accepted parameters in the \_\_settings\_\_ attribute
 
@@ -550,7 +551,9 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
     ```
 - One Rule: You CANNOT use wild cards in the selection of mod name level directories in the config.lua data table e.g. data = {\["base\*"] = {}} is NOT allowed<br/>
 
-**Use cases**
+<br/>
+
+**Use Cases**
 
 - Say you wanted to retexture all of the contents of *data/base/graphics/entity/*, but only upscale the contents of *data/base/graphics/entity/accumulator*.
 	```lua
