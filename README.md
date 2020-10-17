@@ -358,6 +358,8 @@ Current attributes are:
 - Remember the contents of a folder. Folders that do not contain anything (but a \_\_settings\_\_ attribute) have that \_\_settings\_\_ attribute applied to all of the .png, .jpg and .ogg files in it, as a folder with undefined contents means all of its contents have been retextured. A folder with defined contents (other than a \_\_settings\_\_ attribute), will only have these settings applied to its defined contents!
 
 <br/>
+<br/>
+<br/>
 
 **Setting List**
 
@@ -460,6 +462,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
    
 	> Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
 
+<br/>
 <br/>
 <br/>
 
@@ -566,6 +569,8 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 - **One Rule:** You **CANNOT** use wild cards in the selection of mod name level directories in the config.lua data table e.g. *data = {\["base\*"] = {}}* is **NOT** allowed<br/>
 
 <br/>
+<br/>
+<br/>
 
 **Use Cases**
 
@@ -638,6 +643,8 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 	```
   > the 'etc' is not actual lua syntax; there are many more folders in *data/base/graphics/entity/* that would need to be listed, but the list would be too unsightly.
 
+<br/>
+<br/>
 <br/>
 
 **Syntax Nuances**
