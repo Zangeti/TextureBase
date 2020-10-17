@@ -361,9 +361,9 @@ Current attributes are:
 **Setting List**
 
 A list of all accepted parameters in the \_\_settings\_\_ attribute<br/>
-Settings are given in the form of \<setting_name\> = \<setting_type\> (default = \<setting_default\>)
+Settings are given in the form of *\<setting_name\> = \<setting_type\> (default = \<setting_default\>)*
 
-- **exclude_names = list (default = {})**
+- ***exclude_names = list (default = {})***
 	```lua
 	data = {
 		base = {
@@ -434,7 +434,7 @@ Settings are given in the form of \<setting_name\> = \<setting_type\> (default =
 
 <br/>
 	
-- **upscale = int (default = 1)**
+- ***upscale = int (default = 1)***
 	```lua
 	data = {
 		base = {
