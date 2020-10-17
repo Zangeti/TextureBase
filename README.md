@@ -238,7 +238,7 @@ Current attributes are:
 
 - **Simple Rules of how \_\_settings\_\_ Attributes work.**
 	 
-	**\_\_settings\_\_ Attributes Apply to all Files inside the Folder / File in Which the Attribute is Declared.**
+	**1. \_\_settings\_\_ Attributes Apply to all Files inside the Folder / File in Which the Attribute is Declared.**
 	  
 	Therefore:
 	```lua
@@ -279,7 +279,7 @@ Current attributes are:
 	Note *example_image.png* does not actually exist in *data/base/*; it only demonstrates how \_\_settings\_\_ attributes are applied to retextured images. setting_name_1 and setting_name_1 are also only placeholders for actual settings (see below)<br/>
 	<br/>
 
-	**\_\_settings\_\_ Attributes can 'Stack' Up, Down a Path.**
+	**2. \_\_settings\_\_ Attributes can 'Stack' Up, Down a Path.**
 	
 	Therefore:
 	```lua
@@ -318,7 +318,7 @@ Current attributes are:
 	Settings for an image accumulate along its path.<br/>
 	<br/>
 
-	**\_\_settings\_\_ Attributes can Overwrite each other Down a Path**
+	**3. \_\_settings\_\_ Attributes can Overwrite each other Down a Path**
 	
 	Therefore:
 	```lua
