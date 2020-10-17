@@ -430,6 +430,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
   > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
+   
    Note, you can use [Wild Cards](#wild-cards-) for strings inside exclude_names={} table
 
 <br/>
