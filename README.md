@@ -360,9 +360,10 @@ Current attributes are:
 
 **Setting List**
 
-A list of all accepted parameters in the \_\_settings\_\_ attribute
+A list of all accepted parameters in the \_\_settings\_\_ attribute<br/>
+Settings are given in the form of \<setting_name\> = \<setting_type\> (default = \<setting_default\>)
 
-- exclude_names = list (default = {})
+- **exclude_names = list (default = {})**
 	```lua
 	data = {
 		base = {
@@ -374,8 +375,9 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	exclude_names lets you exclude files that would otherwise be included in those to be retextured. This is very useful when you are retexturing via script.<br/>
-	e.g. If you write a script to change the look of every image in *data/base/graphics/entity/* that does not have the strings "shadow", "reflection" or "mask" in it, you can tell the texture pack to retexture all contents of *data/base/graphics/entity/* except files containing "shadow", "reflection" or "mask" in the following way:<br/>
+  exclude_names lets you exclude files that would otherwise be included in those to be retextured. This is very useful when you are retexturing via script.<br/>
+  
+  **e.g. If you Write a Script to Change the Look of every Image in *data/base/graphics/entity/* that Does not Have the Strings "shadow", "reflection" or "mask" in it, You Can Tell the Texture Pack to Retexture all Contents of *data/base/graphics/entity/* except Files Containing "shadow", "reflection" or "mask" in the Following Way:<br/>**
 	```lua
 	data = {
 		base = {
@@ -389,9 +391,10 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	**CAVEAT:** exclude_names let you ommit images that contain whatever string you enter! typing in something like "a" WILL exclude all images that contain an a in their name. A "." would ommit all images, as every image has a file format of!<br/>
+  > **CAVEAT:** exclude_names let you ommit images that contain whatever string you enter! typing in something like "a" WILL exclude all images that contain an a in their name. A "." would ommit all images, as every image has a file format of!<br/>
 	It does not matter whether images that are excluded are specified or not!<br/>
-	In spite of being manually specified, *accumulator-shadow.png* and *hr-accumulator-shadow.png* will not actually have their paths replaced in data.raw, as they are excluded by having "shadow" in their name, and being inside the entity directory to which the setting attribute containing 'exclude_names = {"shadow", "reflection", "mask"}' is applied<br/>
+	
+   **In Spite of Being Manually Specified, *accumulator-shadow.png* and *hr-accumulator-shadow.png* Will not Actually Have their Paths Replaced in data.raw, as They are Excluded by having "shadow" in their Name, and being inside the Entity Directory to which the Setting Attribute containing 'exclude_names = {"shadow", "reflection", "mask"}' is Applied<br/>
 	```lua
 	data = {
 		base = {
@@ -409,9 +412,9 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-  > The above example does not set any images so they're being retextured... All images specified are excluded by the settings attribute
+  > The above example does not result in any images being retextured. All images specified are excluded by the settings attribute
 	
-	Only images with exclude_names in their filenames (name and format) are excluded! The images entire path is not part of its filename!
+   **Only Images with exclude_names in their Filenames (Name and Format) are Excluded! The Image's Entire Path is not part of its Filename!**
 	```lua
 	data = {
 		base = {
@@ -427,9 +430,11 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 	}
 	```
   > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
+   Note, you can use [Wild Cards](#wild-cards-) for strings inside exclude_names={} table
+
 <br/>
 	
-- upscale = int (default = 1)
+- **upscale = int (default = 1)**
 	```lua
 	data = {
 		base = {
