@@ -17,7 +17,7 @@ Don't be intimidated by the README length; a vast majority is dedicated towards 
 		- *[Attributes  __(optional)__](#attributes)*
 		- *[Wild Cards (\*) __(optional)__](#wild-cards-)*
 	- [You're done!!!](#youre-done)
- - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
+ - **[Still having Issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
  - **[License](#license)**
 
 ---
@@ -755,7 +755,7 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 
 ---
 
-## Still having issues, Bugfixes, Feature Requests
+## Still having Issues, Bugfixes, Feature Requests
 
 If no error is thrown on startup but your textures have not appeared in-game, first insure your texturepack is enabled in the factorio mod list *cough cough...*.
 If so, check the factorio log files (*%AppData%/Roaming/Factorio/factorio-current.log*). If your textures are not in-game & no error is thrown when the game starts, the reason of this is likely logged by your texturepack!
