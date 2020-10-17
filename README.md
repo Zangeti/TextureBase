@@ -460,7 +460,9 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
    
 	> Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
 
----
+<br/>
+
+**Setting Attribute Examples**
 
 - A simple example of using the \_\_settings\_\_ attribute:
 	```lua
