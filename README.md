@@ -641,7 +641,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 **Syntax Nuances**
 
 - **Order of Wild Cards in a Table affects How and Which Images are have their Paths Changed to their Retextured Versions<br/>**
-	Wild Card Syntax mean that the below example...
+	The below example...
 	```lua
 	data = {
 		base = {
@@ -720,7 +720,11 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-   Here, all we are doing is retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age". All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
+   Here the following is happening:
+   1. We are retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age".
+   2. All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution.
+   3. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution.
+   4. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
 
 **[Back To Top](#texturebase)**
 
