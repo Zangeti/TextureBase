@@ -545,7 +545,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 ### Wild Cards (\*)
 
-**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**<br/>
+**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are interested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**<br/>
 **Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**<br/>
 
 - Wild Cards allow for parts of a string to be unknown, which is denoted by an \* (asterix)<br/>
@@ -558,7 +558,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
     "*rocket*1*" -- the "rocket" must be in the name. "1" must also be in the name after rocket
     "water.png" -- just kidding; there is no wild card here. The entire name is known
     ```
-- One Rule: You CANNOT use wild cards in the selection of mod name level directories in the config.lua data table e.g. data = {\["base\*"] = {}} is NOT allowed<br/>
+- **One Rule:** You **CANNOT** use wild cards in the selection of mod name level directories in the config.lua data table e.g. *data = {\["base\*"] = {}}* is **NOT** allowed<br/>
 
 <br/>
 
@@ -582,7 +582,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
    The above example of default_include does that exact thing!<br/>
-   However, as is you would have to write out every folder in *data/base/graphics/entity/* to then specify in *data/base/graphics/entity/accumulator* upscale its contents (with a settings attribute). See below the unpractical nature of this approach!
+   However, as is you would have to write out every folder in *data/base/graphics/entity/* to then specify in *data/base/graphics/entity/accumulator* upscale its contents (with a settings attribute).<br/>
+   **See below the unpractical nature of this approach!**
 	```lua
 	data = {
 		base = {
@@ -630,7 +631,10 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
   > the 'etc' is not actual lua syntax; there are many more folders in *data/base/graphics/entity/* that would need to be listed, but the list would be too unsightly.
+
 <br/>
+
+**Syntax Nuances**
 
 - Wild Cards mean that the below example...
 	```lua
@@ -670,8 +674,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	```
 	This is because Wild cards sort objects in the order in which they are written in the config.lua data table.<br/>
 	For example:<br/>
-	In the first of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.<br/>
-	In the second of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.<br/>
+	**In the first of the 2 code snippets**, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.<br/>
+	**In the second of the 2 code snippets**, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.<br/>
 <br/>
 
 - Here is a slightly more complex example involving Wild Cards:
