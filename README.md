@@ -548,7 +548,9 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 ### Wild Cards (\*)
 
-**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are interested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**<br/>
+**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are interested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table).<br/>
+If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](#youre-done)**<br/>
+<br/>
 **Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**<br/>
 
 - Wild Cards allow for parts of a string to be unknown, which is denoted by an \* (asterix)<br/>
