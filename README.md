@@ -457,8 +457,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
    ![Factorio Sprite Resolution Error](https://user-images.githubusercontent.com/45295229/95661099-dd0cc400-0b2c-11eb-8ddd-6bc7c613e119.png)
    
 	> Feel free to report other errors than this related to texture scaling on the discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2), but beware these errors are likely caused by restrictions imposed by the Factorio dev team, and are not a mod error.
-
 <br/>
+
 > Note that to exclude certain images images / folders from a setting defined in a superceding folder, you will have to set the settings in the \_\_settings\_\_ attribute to their defaults
 
 ---
