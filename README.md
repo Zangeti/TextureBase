@@ -13,8 +13,8 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 	- [Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!](#create-duplicate-file-tree-in-\_\_texturepackfolder\_\_data-to-add-your-own-textures--sounds)
 	- [Let your texture pack know which files you have retextured!](#let-your-texture-pack-know-which-files-you-have-retextured)
 		- *[Basic Syntax](#basic-syntax)*
-		- *[Wild Cards (\*) __(optional)__](#wild-cards-)*
 		- *[Attributes  __(optional)__](#attributes)*
+		- *[Wild Cards (\*) __(optional)__](#wild-cards-)*
 	- [You're done!!!](#youre-done)
  - **[Still having issues, Bugfixes, Feature Requests](#still-having-issues-bugfixes-feature-requests)**
  - **[License](#license)**
@@ -24,7 +24,7 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 
 # Steps
 
-### Download TextureBase!
+## Download TextureBase!
 
  - Place TextureBase into the factorio/data mods folder
  - The mod does nothing on its own; follow the next steps to make a texturepack with it!
@@ -32,7 +32,7 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 ---
 
 
-### Give your Texture Pack a cool name!
+## Give your Texture Pack a cool name!
 
 - Rename the TextureBase mod folder to what you want to call your texture pack in the format of '<texture_pack_name>_<version (x.y.z)>'. Your name must be lower case!
 - edit info.json
@@ -47,7 +47,7 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 ---
 
 
-### Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!
+## Create duplicate file tree in *\_\_texturepackfolder\_\_/data* to add your own textures & sounds!
 
 - For the texturepack to apply your textures correctly, you need to save them in a specific format & location. Follow the next steps:
 - Locate the data folder inside of your texturepack (the folder you just renamed). That data folder should be empty (we will from now on call this data folder *\_\_texturepackfolder\_\_/data*).
@@ -66,9 +66,9 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 ---
 
 
-### Let your texture pack know which files you have retextured!
+## Let your texture pack know which files you have retextured!
 
-#### Basic Syntax
+### Basic Syntax
 
 - Sadly, due to factorio lua not being able to read files, the texture pack currently has no way of knowing which files you put into *\_\_texturepackfolder\_\_/data*
 - Let's change that
@@ -177,7 +177,7 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 
 ---
 
-#### Attributes
+### Attributes
 
 **This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as higher res pictures than the original or excluding certain filenames). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**
 
@@ -204,7 +204,7 @@ Current attributes are:
  - \_\_settings\_\_
 
 
-###### \_\_settings\_\_ attribute; customising what/how the resource pack retextures by specific settings
+#### \_\_settings\_\_ attribute; customising what/how the resource pack retextures by specific settings
 - The use of the \_\_settings\_\_ attribute in the config.lua data table further customizes what/how the resource pack retextures.
 - See the below example for one use of \_\_settings\_\_. Here we are retexturing every .png, .jpg and .ogg file in *data/base/graphics*, except for those with "shadow" or "reflection" in their name. This is very useful when you are using a script to modify images in a folder, but are omitting those with a certain string in their name.
 	```lua
@@ -531,7 +531,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 **[Back To Top](#texturebase)**
 
 
-#### Wild Cards (\*)
+### Wild Cards (\*)
 
 **This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**
 **Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**
@@ -704,7 +704,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 
 ---
 
-### You're done!!!
+## You're done!!!
 
 - Congrats! you have created a factorio resource pack with TextureBase!
 - There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
@@ -719,7 +719,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 
 ---
 
-# Still having issues, Bugfixes, Feature Requests
+## Still having issues, Bugfixes, Feature Requests
 
 If no error is thrown on startup but your textures have not appeared in-game, first insure your texturepack is enabled in the factorio mod list (Duh..).
 If so, check the factorio log files (*%AppData%/Roaming/Factorio/factorio-current.log*). If your textures are not in-game & no error is thrown when the game starts, the reason of this is likely logged by your texturepack!
