@@ -364,6 +364,7 @@ Current attributes are:
 A list of all accepted parameters in the \_\_settings\_\_ attribute<br/>
 Settings are given in the form of *\<setting_name\> = \<setting_type\> (default = \<setting_default\>)*
 > Note that to exclude certain images images / folders from a setting defined in a superceding folder, you will have to set the settings in the \_\_settings\_\_ attribute to their defaults
+<br/>
 
 - ***exclude_names = list (default = {})***
 	```lua
