@@ -640,7 +640,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 **Syntax Nuances**
 
-- Wild Card Syntax mean that the below example...
+- **Order of Wild Cards in a Table affects How and Which Images are have their Paths Changed to their Retextured Versions<br/>**
+	Wild Card Syntax mean that the below example...
 	```lua
 	data = {
 		base = {
@@ -657,7 +658,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-	is NOT the same as ...
+	is **NOT** the same as ...
 	```lua
 	data = {
 		base = {
