@@ -408,7 +408,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	  > The above example does not set any images so they're being retextured... All images specified are excluded by the settings attribute
+  > The above example does not set any images so they're being retextured... All images specified are excluded by the settings attribute
 	
 	Only images with exclude_names in their filenames (name and format) are excluded! The images entire path is not part of its filename!
 	```lua
@@ -425,7 +425,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	  > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
+  > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
 
 	
 - upscale = int (default = 1)
