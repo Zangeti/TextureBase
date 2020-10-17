@@ -726,7 +726,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 If no error is thrown on startup but your textures have not appeared in-game, first insure your texturepack is enabled in the factorio mod list (Duh..).
 If so, check the factorio log files (*%AppData%/Roaming/Factorio/factorio-current.log*). If your textures are not in-game & no error is thrown when the game starts, the reason of this is likely logged by your texturepack!
 
-Should you have skipped the optional sections (**[Wild Cards (\*)](#wild-cards-) and *[Attributes](#attributes)*)
+Should you have skipped the optional sections (*[Wild Cards (\*)](#wild-cards-)* and *[Attributes](#attributes)*) you might want to read up on those
 If you are still having issues creating your resourcepack, download my example resourcepacks, Shadow World @ [https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing](https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing), Hologram World @ [https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing](https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing) and Pixel Perfect @ [https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing](https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing).<br/>
 I tried uploading them to https://mods.factorio.com/ but a 100Mb mod size limit prevented this. Google Drive comes for the rescue!<br/>
 <br/>
