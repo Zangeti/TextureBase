@@ -451,7 +451,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-   *upscale* allows retextured images to have a higher resolution than their original. *upscale = 2* means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture.<br/>
+   The *upscale* Setting allows retextured images to have a higher resolution than their original. *upscale = 2* means that all the retextured files have 2x resolution of their originals, and for the texturepack to account for this in the in-game scaling of the texture.<br/>
    **Note that upscale is somewhat experimental!** You may get a variety of errors when using upscale, such as that below:
    
    ![Factorio Sprite Resolution Error](https://user-images.githubusercontent.com/45295229/95661099-dd0cc400-0b2c-11eb-8ddd-6bc7c613e119.png)
