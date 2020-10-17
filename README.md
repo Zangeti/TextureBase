@@ -678,7 +678,6 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
 	This is because Wild cards sort objects in the order in which they are written in the config.lua data table.<br/>
-	For example:<br/>
 	**In the first of the 2 code snippets**, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.<br/>
 	**In the second of the 2 code snippets**, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.<br/>
 <br/>
