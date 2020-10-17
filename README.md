@@ -567,7 +567,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 **Use Cases**
 
-- Say you wanted to retexture all of the contents of *data/base/graphics/entity/*, but only upscale the contents of *data/base/graphics/entity/accumulator*.
+- **Say You Wanted to Retexture all of the Contents of *data/base/graphics/entity/*, but only Upscale the Contents of *data/base/graphics/entity/accumulator*.**
 	```lua
 	data = {
 		base = {
@@ -586,7 +586,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	```
    The above example of default_include does that exact thing!<br/>
    However, as is you would have to write out every folder in *data/base/graphics/entity/* to then specify in *data/base/graphics/entity/accumulator* upscale its contents (with a settings attribute).<br/>
-   **See below the unpractical nature of this approach!**
+   <br/>
+   **See Below the Unpractical Nature of this Approach!**
 	```lua
 	data = {
 		base = {
