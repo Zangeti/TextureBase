@@ -251,7 +251,7 @@ Current attributes are:
 			["example_image.png"] = { },
 		},
 	}
-		```
+	```
 	has the same result as:
 	```lua
 	data = {
