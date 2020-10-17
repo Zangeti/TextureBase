@@ -179,8 +179,9 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 
 ### Attributes
 
-**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as higher res pictures than the original or excluding certain filenames). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**
-
+**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as higher res pictures than the original or excluding certain filenames).
+If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](#youre-done)**.<br/>
+<br/>
 Attributes are effectively custom keywords you can use in the config.lua data table for custom behaviour in terms of which files are retextured & which aren't
 ```lua
 data = {
@@ -549,7 +550,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 ### Wild Cards (\*)
 
 **This is not necessary to get your texturepack working**. I recommend reading up on this however if you are interested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table).<br/>
-If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](#youre-done)**<br/>
+If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](#youre-done)**.<br/>
 <br/>
 **Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**<br/>
 
