@@ -468,7 +468,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 **Setting Attribute Examples**
 
-- A simple example of using the \_\_settings\_\_ attribute:
+- **A Simple Example of Using the \_\_settings\_\_ Attribute:**
 	```lua
 	data = {
 		base = {
@@ -488,7 +488,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	```
 <br/>
 
-- A sophisticated example of using the \_\_settings\_\_ attribute:
+- **A Sophisticated Example of Using the \_\_settings\_\_ Attribute**
 	```lua
 	data = {
 		__settings__ = {
@@ -537,7 +537,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
 
-	No reason to panic; lets walk through this step by step.
+   **No reason to panic; lets walk through this step by step.**
    1. We are retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/accumulator/*. All images retextured that are within the *data/* folder, should not contain "shadow" or "relection" in their name (given in the format of "\<filename\>.\<format\>"). However, the *data/base/graphics/entity/* overrides the exlude_names setting, so within *data/base/graphics/entity/* files that include "shadow" or "charge" are excluded. Inside the *data/base/graphics/entity/accumulator/* folder, the upscale setting is set to 2. This means that the textures in *\_\_texturepackfolder\_\_/data/base/graphics/entity/accumulator/* are twice the resolution of those in *factorio/data/base/graphics/entity/accumulator/*, and need to be handled by factorio as such. Therefore, we are retexturing all images in *data/base/graphics/entity/accumulator/*, apart from those including "shadow" or "charge" in their name (in this case *accumulator-charge.png, accumulator-discharge.png, hr-accumulator-charge.png, hr-accumulator-discharge.png, accumulator-shadow.png and hr-accumulator-shadow.png), at 2x the resolution of the images' originals.
    2. We are also retexturing *data/base/graphics/entity/acid-projectile/hr-acid-projectile-head.png*. Once again the exclusion of "shadow" and "reflection" for all files in the *data/* folder is overwritten for files in the *data/base/graphics/entity/* folder to exclude files with "shadow" or "charge" in their names. From the folder *data/base/graphics/entity/acid-projectile/* we are retexturing *hr-acid-projectile-head.png*. This file has an upscale of 3 set in its settings (settings in the table of an image, only apply to that image). Since *hr-acid-projectile-head.png* does not include the strings "shadow" or "charge", it is retextured, at 3x original resolution.
    3. We are also retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/*. Once again, the exclusion of files containing the strings "shadow" and "reflection" within *data/* is overwritten in *data/base/graphics/* so instead files including "shadow" or "charge" are excluded. Therefore all .png, .jpg and .ogg files, apart from those with "shadow" or "charge" in their name, in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/* are retextured. The upscale setting has not been specified, so the files have their same resolution as their originals.
