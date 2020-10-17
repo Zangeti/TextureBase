@@ -37,7 +37,7 @@ Don't be intimidated this guide's length; a vast amount is dedicated towards exp
 - Rename the TextureBase mod folder to what you want to call your texture pack in the format of '<texture_pack_name>_<version (x.y.z)>'. Your name must be lower case!
 - edit info.json
     - set "name" to the lower case mod name of your folder
-	- set "version" to the version of your texturepack (usually 0.0.1 if you are creating a new texture pack)
+	- set "version" to the version of your texturepack (usually 0.0.1 if you are creating a new texture pack); must be the same as the version written in the folder name
 	- set "title" to the mod name! Here you may use uppercase letters & spaces
 	- set "author" to the username of your [Factorio Account](https://factorio.com/login)
 	- edit the other fields as you see fit... if you are retexturing another mod, I recommend listing that mod as an optional dependency, to guarantee your texture pack is loaded after the mod you are retexturing is.
@@ -369,7 +369,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		base = {
 			graphics = {
 				__settings__ = {
-					exclude_names = {"shadow", "reflection", "mask", "particle", "fire", "explosion"},
+					exclude_names = {"*shadow*", "*reflection*", "*mask*", "*particle*", "*fire*", "*.jpg", "hr-accumulator-discharge.png"},
 				},
 			},
 		},
@@ -384,13 +384,15 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 			graphics = {
 				entity = {
 					__settings__ = {
-						exclude_names = {"shadow", "reflection", "mask"},
+						exclude_names = {"*shadow*", "*reflection*", "*mask*"},
 					},
 				},
 			},
 		},
 	}
 	```
+  > Note the usage of \* surrounding the terms that are not allowed around filenames that would otherwise be retextured. See [Wild Cards](#wild-cards-) why this is necessary in order to exclude files whose names include these strings!
+
   > **CAVEAT:** exclude_names let you ommit images that contain whatever string you enter! typing in something like "a" WILL exclude all images that contain an a in their name. A "." would ommit all images, as every image has a file format of!<br/>
 	It does not matter whether images that are excluded are specified or not!<br/>
 	
@@ -400,7 +402,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		base = {
 			graphics = {
 				__settings__ = {
-					exclude_names = {"shadow", "reflection", "mask"},
+					exclude_names = {"*shadow*", "*reflection*", "*mask*"},
 				},
 				entity = {
 					accumulator = {
@@ -420,7 +422,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		base = {
 			graphics = {
 				__settings__ = {
-					exclude_names = {"entity"},
+					exclude_names = {"*entity*"},
 				},
 				entity = {
 					
@@ -469,7 +471,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		base = {
 			graphics = {
 				__settings__ = {
-					exclude_names = {"shadow", "reflection", "mask"},
+					exclude_names = {"*shadow*", "*reflection*", "*mask*"},
 					default_include = true
 				},
 				
@@ -488,14 +490,14 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	```lua
 	data = {
 		__settings__ = {
-			exclude_names = {"shadow", "reflection"},
+			exclude_names = {"*shadow*", "*reflection*"},
 		},
 		
 		base = {
 			graphics = {
 				entity = {
 					__settings__ = {
-						exclude_names = {"shadow", "charge"}
+						exclude_names = {"*shadow*", "*charge*"}
 					},
 					accumulator = {
 						__settings__ = {
@@ -532,12 +534,13 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
+
 	No reason to panic; lets walk through this step by step.
-	1. We are retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/accumulator/*. All images retextured that are within the *data/* folder, should not contain "shadow" or "relection" in their name (given in the format of "\<filename\>.\<format\>"). However, the *data/base/graphics/entity/* overrides the exlude_names setting, so within *data/base/graphics/entity/* files that include "shadow" or "charge" are excluded. Inside the *data/base/graphics/entity/accumulator/* folder, the upscale setting is set to 2. This means that the textures in *\_\_texturepackfolder\_\_/data/base/graphics/entity/accumulator/* are twice the resolution of those in *factorio/data/base/graphics/entity/accumulator/*, and need to be handled by factorio as such. Therefore, we are retexturing all images in *data/base/graphics/entity/accumulator/*, apart from those including "shadow" or "charge" in their name (in this case *accumulator-charge.png, accumulator-discharge.png, hr-accumulator-charge.png, hr-accumulator-discharge.png, accumulator-shadow.png and hr-accumulator-shadow.png), at 2x the resolution of the images' originals.
-	2. We are also retexturing *data/base/graphics/entity/acid-projectile/hr-acid-projectile-head.png*. Once again the exclusion of "shadow" and "reflection" for all files in the *data/* folder is overwritten for files in the *data/base/graphics/entity/* folder to exclude files with "shadow" or "charge" in their names. From the folder *data/base/graphics/entity/acid-projectile/* we are retexturing *hr-acid-projectile-head.png*. This file has an upscale of 3 set in its settings (settings in the table of an image, only apply to that image). Since *hr-acid-projectile-head.png* does not include the strings "shadow" or "charge", it is retextured, at 3x original resolution.
-	3. We are also retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/*. Once again, the exclusion of files containing the strings "shadow" and "reflection" within *data/* is overwritten in *data/base/graphics/* so instead files including "shadow" or "charge" are excluded. Therefore all .png, .jpg and .ogg files, apart from those with "shadow" or "charge" in their name, in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/* are retextured. The upscale setting has not been specified, so the files have their same resolution as their originals.
-	4. We are also retexturing all .png, .jpg and .ogg files in *data/base/graphics/terrain/* and *data/base/graphics/technology/*. All files in *data/* including strings "shadow" and "reflection" are excluded from those being retextured. The exclude_names setting is not overwritten in a subdirectory in the path of *data/base/graphics/terrain/* or *data/base/graphics/technology/*, so all files from *data/base/graphics/terrain/* and *data/base/graphics/technology/* are retextured apart from those including "shadow" or "reflection" in their name.
-	5. We are also retexturing all .png, .jpg and .ogg files in *data/boblogistics/graphics/*. All files in *data/* including strings "shadow" and "reflection" are excluded from those being retextured. This is not overwritten, so all contents of *data/boblogistics/graphics/* are retextured that do not include *shadow* or *reflection* in their name.
+   1. We are retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/accumulator/*. All images retextured that are within the *data/* folder, should not contain "shadow" or "relection" in their name (given in the format of "\<filename\>.\<format\>"). However, the *data/base/graphics/entity/* overrides the exlude_names setting, so within *data/base/graphics/entity/* files that include "shadow" or "charge" are excluded. Inside the *data/base/graphics/entity/accumulator/* folder, the upscale setting is set to 2. This means that the textures in *\_\_texturepackfolder\_\_/data/base/graphics/entity/accumulator/* are twice the resolution of those in *factorio/data/base/graphics/entity/accumulator/*, and need to be handled by factorio as such. Therefore, we are retexturing all images in *data/base/graphics/entity/accumulator/*, apart from those including "shadow" or "charge" in their name (in this case *accumulator-charge.png, accumulator-discharge.png, hr-accumulator-charge.png, hr-accumulator-discharge.png, accumulator-shadow.png and hr-accumulator-shadow.png), at 2x the resolution of the images' originals.
+   2. We are also retexturing *data/base/graphics/entity/acid-projectile/hr-acid-projectile-head.png*. Once again the exclusion of "shadow" and "reflection" for all files in the *data/* folder is overwritten for files in the *data/base/graphics/entity/* folder to exclude files with "shadow" or "charge" in their names. From the folder *data/base/graphics/entity/acid-projectile/* we are retexturing *hr-acid-projectile-head.png*. This file has an upscale of 3 set in its settings (settings in the table of an image, only apply to that image). Since *hr-acid-projectile-head.png* does not include the strings "shadow" or "charge", it is retextured, at 3x original resolution.
+   3. We are also retexturing all .png, .jpg and .ogg files in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/*. Once again, the exclusion of files containing the strings "shadow" and "reflection" within *data/* is overwritten in *data/base/graphics/* so instead files including "shadow" or "charge" are excluded. Therefore all .png, .jpg and .ogg files, apart from those with "shadow" or "charge" in their name, in *data/base/graphics/entity/beacon/* and *data/base/graphics/entity/car/* are retextured. The upscale setting has not been specified, so the files have their same resolution as their originals.
+   4. We are also retexturing all .png, .jpg and .ogg files in *data/base/graphics/terrain/* and *data/base/graphics/technology/*. All files in *data/* including strings "shadow" and "reflection" are excluded from those being retextured. The exclude_names setting is not overwritten in a subdirectory in the path of *data/base/graphics/terrain/* or *data/base/graphics/technology/*, so all files from *data/base/graphics/terrain/* and *data/base/graphics/technology/* are retextured apart from those including "shadow" or "reflection" in their name.
+   5. We are also retexturing all .png, .jpg and .ogg files in *data/boblogistics/graphics/*. All files in *data/* including strings "shadow" and "reflection" are excluded from those being retextured. This is not overwritten, so all contents of *data/boblogistics/graphics/* are retextured that do not include *shadow* or *reflection* in their name.
 
 **[Back To Top](#texturebase)**
 
@@ -636,7 +639,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 
 **Syntax Nuances**
 
-- Wild Cards mean that the below example...
+- Wild Card Syntax mean that the below example...
 	```lua
 	data = {
 		base = {
@@ -685,7 +688,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 			graphics = {
 				achievement = {
 					__settings__ = {
-						exclude_names = {"circuit-veteran", "computer-age"},
+						exclude_names = {"*circuit-veteran*", "*computer-age*"},
 						upscale = 2,
 					},
 					["iron-throne-*.png"] = {
@@ -715,7 +718,7 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
-  > Here, all we are doing is retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age". All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
+   Here, all we are doing is retexturing all the .png, .jpg and .ogg files in *data/base/graphics/*, except from those in *data/base/graphics/achievement/* whose names contain "circuit-veteran" or "computer-age". All .png, .jpg and .ogg files other than those matching the "iron-throne-\*.png" wildcard in *data/base/graphics/achievement/* are retextured at 2x original resolution. *data/base/graphics/entity/biter/biter-attack-01.png* is retextured at 1.5x original resolution, whilst all other .png, .jpg and .ogg files in *data/base/graphics/entity/biter/* are retextured at normal resolution. All .png, .jpg and .ogg in *data/base/graphics/entity/* but not in *data/base/graphics/entity/biter/* are retexture at 2x original resolution. All .png, .jpg and .ogg in *data/base/graphics/* and not in *data/base/graphics/achievement/* or *data/base/graphics/entity/* are retextured at normal resolution.
 
 **[Back To Top](#texturebase)**
 
