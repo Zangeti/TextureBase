@@ -203,7 +203,7 @@ data = {
 Current attributes are:
  - \_\_settings\_\_<br/>
 <br/>
-<br/>
+
 #### \_\_settings\_\_ attribute; customising what/how the resource pack retextures by specific settings
 
 - The use of the \_\_settings\_\_ attribute in the config.lua data table further customizes what/how the resource pack retextures.
@@ -233,8 +233,6 @@ Current attributes are:
 	```
 	
 - The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the _\_settings\_\_ attribute applied to these specific subdirectories / images
-
----
 
 - Simple Rules of how \_\_settings\_\_ attributes work.
 	 
@@ -373,8 +371,8 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	exclude_names lets you exclude files that would otherwise be included in those to be retextured. This is very useful when you are retexturing via script.
-	e.g. If you write a script to change the look of every image in *data/base/graphics/entity/* that does not have the strings "shadow", "reflection" or "mask" in it, you can tell the texture pack to retexture all contents of *data/base/graphics/entity/* except files containing "shadow", "reflection" or "mask" in the following way:
+	exclude_names lets you exclude files that would otherwise be included in those to be retextured. This is very useful when you are retexturing via script.<br/>
+	e.g. If you write a script to change the look of every image in *data/base/graphics/entity/* that does not have the strings "shadow", "reflection" or "mask" in it, you can tell the texture pack to retexture all contents of *data/base/graphics/entity/* except files containing "shadow", "reflection" or "mask" in the following way:<br/>
 	```lua
 	data = {
 		base = {
@@ -388,9 +386,9 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	CAVEAT: exclude_names let you ommit images that contain whatever string you enter! typing in something like "a" WILL exclude all images that contain an a in their name. A "." would ommit all images, as every image has a file format of!
-	It does not matter whether images that are excluded are specified or not!
-	In spite of being manually specified, *accumulator-shadow.png* and *hr-accumulator-shadow.png* will not actually have their paths replaced in data.raw, as they are excluded by having "shadow" in their name, and being inside the entity directory to which the setting attribute containing 'exclude_names = {"shadow", "reflection", "mask"}' is applied
+	**CAVEAT:** exclude_names let you ommit images that contain whatever string you enter! typing in something like "a" WILL exclude all images that contain an a in their name. A "." would ommit all images, as every image has a file format of!<br/>
+	It does not matter whether images that are excluded are specified or not!<br/>
+	In spite of being manually specified, *accumulator-shadow.png* and *hr-accumulator-shadow.png* will not actually have their paths replaced in data.raw, as they are excluded by having "shadow" in their name, and being inside the entity directory to which the setting attribute containing 'exclude_names = {"shadow", "reflection", "mask"}' is applied<br/>
 	```lua
 	data = {
 		base = {
@@ -426,7 +424,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 	}
 	```
   > Therefore, this marks all files in *data/base/graphics/entity/* without "entity" in their filename for retexturing! NOT all of the contents of entity are excluded from retexturing, as it is only the filenames that are checked whether they contain "entity", and NOT an images entire path! 
-
+<br/>
 	
 - upscale = int (default = 1)
 	```lua
@@ -473,7 +471,8 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	
+<br/>
+
 - A sophisticated example of using the \_\_settings\_\_ attribute:
 	```lua
 	data = {
@@ -535,11 +534,11 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 
 ### Wild Cards (\*)
 
-**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**
-**Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**
+**This is not necessary to get your texturepack working**. I recommend reading up on this however if you are intrested in what other things TextureBase can do for you (such as Wild Cards in directory/fiile names in config.lua data table). If you are not finding the config.lua data table syntax above is making it unpractical / impossible to implement what you want, **[SKIP THIS SECTION](#youre-done)**<br/>
+**Wild Cards increase your flexibility in defining folders to be retextured in the config.lua data table**<br/>
 
-- Wild Cards allow for parts of a string to be unknown, which is denoted by an \* (asterix)
-- Here are some wild card examples:
+- Wild Cards allow for parts of a string to be unknown, which is denoted by an \* (asterix)<br/>
+- Here are some wild card examples:<br/>
     ```lua
     "*" -- the whole name can be anything; all strings are included
     "character*" -- the name must start with "character" and end with an unknown string (which may just be "")
@@ -548,7 +547,7 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
     "*rocket*1*" -- the "rocket" must be in the name. "1" must also be in the name after rocket
     "water.png" -- just kidding; there is no wild card here. The entire name is known
     ```
-- One Rule: You CANNOT use wild cards in the selection of mod name level directories in the config.lua data table e.g. data = {\["base\*"] = {}} is NOT allowed
+- One Rule: You CANNOT use wild cards in the selection of mod name level directories in the config.lua data table e.g. data = {\["base\*"] = {}} is NOT allowed<br/>
 
 **Use cases**
 
@@ -569,9 +568,8 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-   The above example of default_include does that exact thing!
+   The above example of default_include does that exact thing!<br/>
    However, as is you would have to write out every folder in *data/base/graphics/entity/* to then specify in *data/base/graphics/entity/accumulator* upscale its contents (with a settings attribute). See below the unpractical nature of this approach!
-	
 	```lua
 	data = {
 		base = {
@@ -619,7 +617,8 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 	}
 	```
   > the 'etc' is not actual lua syntax; there are many more folders in *data/base/graphics/entity/* that would need to be listed, but the list would be too unsightly.
-	
+<br/>
+
 - Wild Cards mean that the below example...
 	```lua
 	data = {
@@ -656,10 +655,10 @@ A list of all accepted parameters in the \_\_settings\_\_ attribute
 		},
 	}
 	```
-	This is because Wild cards sort objects in the order in which they are written in the config.lua data table.
-	For example:
-	In the first of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.
-	In the second of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.
+	This is because Wild cards sort objects in the order in which they are written in the config.lua data table.<br/>
+	For example:<br/>
+	In the first of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is that checked the next dirctory down is the *accumulator/* dirctory. If so, the file's path is changed to the retextured file, and data.raw settings are changed to allow the replacement picture to be 1.5x the resolution of the original. Else if the next directory down the path has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied.<br/>
+	In the second of the 2 code snippets, when an image in data.raw is found whose path is inside *data/base/graphics/entity/*, the path is checked that the next dirctory down has a name (wild card of "\*" represents an unspecified part of a string), which all directories do, it is loaded without the upscale applied. Even files inside the *accumulator/* folder are not upscaled, as the folder name "accumulator" these files are located in matches the "\*" wild card, which in example 2 is queried before the "accumulator" folder.<br/>
 <br/>
 
 - Here is a slightly more complex example involving Wild Cards:
