@@ -201,8 +201,9 @@ data = {
 > You can see the format of declaring attributes is identical to that of declaring folders in the config.lua data table. YES, this does mean you can't retexture the contents of a folder with the same name as an attribute! Ask the creator of the mod you are retexturing to rename the folder!
 
 Current attributes are:
- - \_\_settings\_\_<br/>
-<br/>
+ - \_\_settings\_\_
+
+---
 
 #### \_\_settings\_\_ attribute; customising what/how the resource pack retextures by specific settings
 
