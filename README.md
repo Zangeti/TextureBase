@@ -647,7 +647,7 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 <br/>
 <br/>
 
-**Syntax Nuances**
+**Syntax & Examples**
 
 - **Order of Wild Cards in a Table affects How and Which Images are have their Paths Changed to their Retextured Versions<br/>**
 	The below example...
