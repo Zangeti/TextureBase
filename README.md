@@ -769,7 +769,7 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 
 - Congrats! you have created a factorio resource pack with TextureBase!
 - There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
-- You might also consider removing / modifying this README.md file along with other github files such as LICENSE from your texturepack.
+- You might also consider removing / modifying this *README.md*, *LICENCE*, *.gitattributes*, *.git* and *changelog.txt* from your texturepack.
 - If you haven't already, exchange the default thumbnail.png with a texturepack icon of your own (144x144 resolution).
 - Next Steps:
 	- Upload your creation. You might have to use Gdrive for this, as GitHub and [https://mods.factorio.com/](https://mods.factorio.com/) do not allow uploading a bigger texturepack than 100Mb. You'll likely have to create a placeholder mod on [https://mods.factorio.com/](https://mods.factorio.com/) with a texturepack download link. 
