@@ -224,7 +224,7 @@ Current attributes are:
 	```
   > Think \_\_settings\_\_ as an attribute of all contents within the same folder as itself (in this case the contents of *data/base/graphics*).
 
-	- **The Format of the \_\_settings\_\_ Attribute is as follows**
+	- **The Format of the \_\_settings\_\_ Attribute is as follows:**
 		```lua
 		name_of_folder_whose_contents_are_affected_by_settings = {
 			__settings__ = {
@@ -235,7 +235,7 @@ Current attributes are:
 		}
 		```
 	
-- The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the _\_settings\_\_ attribute applied to these specific subdirectories / images
+- The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the \_\_settings\_\_ attribute applied to these subdirectories / images
 
 
 - **Simple Rules of how \_\_settings\_\_ Attributes work.**
@@ -491,8 +491,9 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 		},
 	}
 	```
+   **The Following Files are retextured:**
    1. The .png, .jpg and .ogg contents of *data/base/graphics/entity/accumulator/* are retextured at 2x original resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
-   2. The contents of *data/base/graphics/entity/character/* and *data/base/graphics/entity/car/* are retextured at normal resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
+   2. The .png, .jpg and .ogg contents of *data/base/graphics/entity/character/* and *data/base/graphics/entity/car/* are retextured at normal resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
 	
 <br/>
 
