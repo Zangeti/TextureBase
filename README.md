@@ -242,7 +242,7 @@ Current attributes are:
 	 
 	**1. \_\_settings\_\_ Attributes Apply to all Files inside the Folder / File in Which the Attribute is Declared.**
 	  
-	Therefore:
+	*Therefore...*
 	```lua
 	data = {
 		__settings__ = {
@@ -254,7 +254,7 @@ Current attributes are:
 		},
 	}
 	```
-	has the same result as:
+	*has the same result as...*
 	```lua
 	data = {
 		base = {
@@ -265,7 +265,7 @@ Current attributes are:
 		},
 	}
 	```
-	which has the same result as:
+	*which has the same result as...*
 	```lua
 	data = {
 		base = {
@@ -283,7 +283,7 @@ Current attributes are:
 
 	**2. \_\_settings\_\_ Attributes can 'Stack' Up, Down a Path.**
 	
-	Therefore:
+	*Therefore...*
 	```lua
 	data = {
 		__settings__ = {
@@ -303,7 +303,7 @@ Current attributes are:
 		},
 	}
 	```
-	has the same result as:
+	*has the same result as...*
    ```lua
 	data = {
 		base = {	
@@ -322,7 +322,7 @@ Current attributes are:
 
 	**3. \_\_settings\_\_ Attributes can Overwrite each other Down a Path**
 	
-	Therefore:
+	*Therefore...*
 	```lua
 	data = {
 		__settings__ = {
@@ -342,7 +342,7 @@ Current attributes are:
 		},
 	}
 	```
-	has the same result as:
+	*has the same result as...*
 	```lua
 	data = {
 		base = {
