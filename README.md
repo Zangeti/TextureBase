@@ -235,7 +235,8 @@ Current attributes are:
 		}
 		```
 	
-- The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the \_\_settings\_\_ attribute applied to these subdirectories / images
+- The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared.<br/>
+   This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the \_\_settings\_\_ attribute applied to these subdirectories / images.
 
 
 - **Simple Rules of how \_\_settings\_\_ Attributes work.**
@@ -355,6 +356,7 @@ Current attributes are:
 	}
 	```
 	setting_name_1 is overwritten down the path towards *example_image.png*.
+<br/>
 
 - Remember the contents of a folder. Folders that do not contain anything (but a \_\_settings\_\_ attribute) have that \_\_settings\_\_ attribute applied to all of the .png, .jpg and .ogg files in it, as a folder with undefined contents means all of its contents have been retextured. A folder with defined contents (other than a \_\_settings\_\_ attribute), will only have these settings applied to its defined contents!
 
