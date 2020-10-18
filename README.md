@@ -790,7 +790,7 @@ If you are still having issues creating your resourcepack, download my example r
 
 I tried uploading them to https://mods.factorio.com/ but a 100Mb mod size limit prevented this. Google Drive comes for the rescue!
 
-Should you have skipped the optional sections (*[Wild Cards (\*)](#wild-cards-)* and *[Attributes](#attributes)*) you might want to read up on those.
+Should you have skipped the optional sections (***[Wild Cards (\*)](#wild-cards-)*** and ***[Attributes](#attributes)***) you might want to read up on those.
 
 Also check out my **discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2)**. Here you can get further help, report bugs, request features and find people to play with!
 
