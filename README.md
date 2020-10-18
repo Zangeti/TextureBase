@@ -224,7 +224,7 @@ Current attributes are:
 	```
   > Think \_\_settings\_\_ as an attribute of all contents within the same folder as itself (in this case the contents of *data/base/graphics*).
 
-	- The Format of the \_\_settings\_\_ Attribute is as follows**
+	- **The Format of the \_\_settings\_\_ Attribute is as follows**
 		```lua
 		name_of_folder_whose_contents_are_affected_by_settings = {
 			__settings__ = {
