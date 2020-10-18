@@ -278,8 +278,8 @@ Current attributes are:
 		},
 	}
 	```
-	In the top 2 examples above, *example_image.png* is in a folder whose \_\_settings\_\_ attribute prescibes for all of the retextured files inside of it have setting_name_1 applied at setting_name_1. In the last example, the \_\_settings\_\_ attribute is directly applied to the image itself (and not the contents of a folder, the image happens to be in).<br/>
-	Note *example_image.png* does not actually exist in *data/base/*; it only demonstrates how \_\_settings\_\_ attributes are applied to retextured images. setting_name_1 and setting_name_1 are also only placeholders for actual settings (see below)<br/>
+	In the top 2 examples above, *example_image.png* is in a folder whose \_\_settings\_\_ attribute prescibes for all of the retextured files inside of it have *setting_name_1* applied at *setting_name_1*. In the last example, the \_\_settings\_\_ attribute is directly applied to the image itself (and not the contents of a folder, the image happens to be in).<br/>
+	Note *example_image.png* does not actually exist in *data/base/*; it only demonstrates how \_\_settings\_\_ attributes are applied to retextured images. *setting_name_1* and *setting_name_1* are also only placeholders for actual settings (see below)<br/>
 	<br/>
 
 	**2. \_\_settings\_\_ Attributes can 'Stack' Up, Down a Path.**
