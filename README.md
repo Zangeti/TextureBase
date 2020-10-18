@@ -56,7 +56,7 @@ Don't be intimidated by the README length; a vast majority is dedicated towards 
 	- for example, to retexture a nuclear explosion, you would:
         - find the directory in which the nuclear explosion sprites are stored, which is *factorio/data/base/graphics/entity/nuke-explosion/*
 	    - mirror the file tree in *\_\_texturepackfolder\_\_/data*, such that the directory *\_\_texturepackfolder\_\_/data/base/graphics/entity/nuke-explosion/* exists
-	    - place the .png files in *factorio/data/base/graphics/entity/nuke-explosion/* you have retextured in *\_\_texturepackfolder\_\_/data/base/graphics/entity/nuke-explosion/*. Make sure the file name & format of your texture is the same the original.
+	    - place the .png files in *factorio/data/base/graphics/entity/nuke-explosion/* you have retextured in *\_\_texturepackfolder\_\_/data/base/graphics/entity/nuke-explosion/*. Make sure the filename & format of your texture is the same the original.
 - Mods may have file trees with different structures to base or core.
     - You must nonetheless mirror the file tree of the respective mod.
     - e.g. to change the logistic chest texture in [boblogistics](https://mods.factorio.com/mod/boblogistics) found at *factorio/data/boblogistics/graphics/entity/logistic-chest/*, you would have to add your retextured files to *\_\_texturepackfolder\_\_/data/boblogistics/graphics/entity/logistic-chest/*
@@ -492,8 +492,8 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	}
 	```
    **The Following Files are retextured:**
-   1. The .png, .jpg and .ogg contents of *data/base/graphics/entity/accumulator/* are retextured at 2x original resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
-   2. The .png, .jpg and .ogg contents of *data/base/graphics/entity/character/* and *data/base/graphics/entity/car/* are retextured at normal resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
+   1. The .png, .jpg and .ogg contents of *data/base/graphics/entity/accumulator/* are retextured at 2x original resolution as long as their filename doesn't include "shadow", "reflection" or "mask".
+   2. The .png, .jpg and .ogg contents of *data/base/graphics/entity/character/* and *data/base/graphics/entity/car/* are retextured at normal resolution as long as their filename doesn't include "shadow", "reflection" or "mask".
 	
 <br/>
 
