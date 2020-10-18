@@ -784,15 +784,15 @@ If no error is thrown on startup but your textures have not appeared in-game, fi
 If so, check the factorio log files (*%AppData%/Roaming/Factorio/factorio-current.log*). If your textures are not in-game & no error is thrown when the game starts, the reason of this is likely logged by your texturepack!
 
 If you are still having issues creating your resourcepack, download my example resourcepacks:
-- Shadow World @ [https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing](https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing)
-- Hologram World @ [https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing](https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing)
-- Pixel Perfect @ [https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing](https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing)
+- **Shadow World** @ [https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing](https://drive.google.com/file/d/1bN3yiFb1y8rMiTiCTyGbhklPDw5AfF1K/view?usp=sharing)
+- **Hologram World** @ [https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing](https://drive.google.com/file/d/1jZhFcircOzxt0ejexdXds5Khsw75Vaby/view?usp=sharing)
+- **Pixel Perfect** @ [https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing](https://drive.google.com/file/d/14dEJA84MVQ3Z4UhZfryU5rCKtoEiw2hr/view?usp=sharing)
 
 I tried uploading them to https://mods.factorio.com/ but a 100Mb mod size limit prevented this. Google Drive comes for the rescue!
 
 Should you have skipped the optional sections (*[Wild Cards (\*)](#wild-cards-)* and *[Attributes](#attributes)*) you might want to read up on those.
 
-Also check out my discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2). Here you can get further help, report bugs, request features and find people to play with!
+Also check out my **discord @ [https://discord.gg/kC53xn2](https://discord.gg/kC53xn2)**. Here you can get further help, report bugs, request features and find people to play with!
 
 **[Back To Top](#texturebase)**
 
