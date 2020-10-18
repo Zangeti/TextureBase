@@ -474,19 +474,26 @@ Settings are given in the form of *\<setting_name\> = \<setting_type\> (default 
 	data = {
 		base = {
 			graphics = {
-				__settings__ = {
-					exclude_names = {"*shadow*", "*reflection*", "*mask*"},
-				},
-				
-				accumulator = {
+				entity = {
 					__settings__ = {
-						upscale = 2,
+						exclude_names = {"*shadow*", "*reflection*", "*mask*"},
 					},
+					
+					accumulator = {
+						__settings__ = {
+							upscale = 2,
+						},
+					},
+					character = { },
+					car = { },
 				},
 			},
 		},
 	}
 	```
+   1. The .png, .jpg and .ogg contents of *data/base/graphics/entity/accumulator/* are retextured at 2x original resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
+   2. The contents of *data/base/graphics/entity/character/* and *data/base/graphics/entity/car/* are retextured at normal resolution as long as their file name doesn't include "shadow", "reflection" or "mask".
+	
 <br/>
 
 - **A Sophisticated Example of Using the \_\_settings\_\_ Attribute**
