@@ -225,15 +225,15 @@ Current attributes are:
   > Think \_\_settings\_\_ as an attribute of all contents within the same folder as itself (in this case the contents of *data/base/graphics*).
 
   > Also note the format of the \_\_settings\_\_ attribute. It is as follows:
-	```lua
-	name_of_folder_whose_contents_are_affected_by_settings = {
-		__settings__ = {
-			setting_name_1 = setting_value_1,
-			setting_name_2 = setting_value_2,
-			setting_name_3 = setting_value_3,
-		},
-	}
-	```
+		```lua
+		name_of_folder_whose_contents_are_affected_by_settings = {
+			__settings__ = {
+				setting_name_1 = setting_value_1,
+				setting_name_2 = setting_value_2,
+				setting_name_3 = setting_value_3,
+			},
+		}
+		```
 	
 - The \_\_settings\_\_ attribute is applied to all files set for retexturing within the folder in which the \_\_settings\_\_ attribute is declared. This means that a folder with undeclared contents (\_\_settings\_\_ does not count), will have its \_\_settings\_\_ attribute applied to all .png, .jpg and .ogg files within it, whereas a folder with declared contents will only have the _\_settings\_\_ attribute applied to these specific subdirectories / images
 
