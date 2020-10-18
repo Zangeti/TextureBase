@@ -210,7 +210,7 @@ Current attributes are:
 #### The \_\_settings\_\_ Attribute; Customising What / How the Resource Pack Retextures by Specific Settings
 
 - The use of the \_\_settings\_\_ attribute in the config.lua data table further customizes what/how the resource pack retextures.
-- See the below example for one use of \_\_settings\_\_. Here we are retexturing every .png, .jpg and .ogg file in *data/base/graphics*, except for those with "shadow" or "reflection" in their name. This is very useful when you are using a script to modify images in a folder, but are omitting those with a certain string in their name.
+- **See the below example for one use of \_\_settings\_\_**. Here we are retexturing every .png, .jpg and .ogg file in *data/base/graphics*, except for those with "shadow" or "reflection" in their name. This is very useful when you are using a script to modify images in a folder, but are omitting those with a certain string in their name.
 	```lua
 	data = {
 		base = {
