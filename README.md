@@ -318,7 +318,7 @@ Current attributes are:
 		},
 	}
 	```
-	Settings for an image accumulate along its path.<br/>
+	Different settings for an image accumulate along its path.<br/>
 	<br/>
 
 	**3. \_\_settings\_\_ Attributes can Overwrite each other Down a Path**
@@ -355,7 +355,7 @@ Current attributes are:
 		},
 	}
 	```
-	setting_name_1 is overwritten down the path towards *example_image.png*.
+	Same settings for an image overwrite each other along its path.
 <br/>
 
 - Remember the contents of a folder. Folders that do not contain anything (but a \_\_settings\_\_ attribute) have that \_\_settings\_\_ attribute applied to all of the .png, .jpg and .ogg files in it, as a folder with undefined contents means all of its contents have been retextured. A folder with defined contents (other than a \_\_settings\_\_ attribute), will only have these settings applied to its defined contents!
