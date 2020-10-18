@@ -767,7 +767,8 @@ If you are making your first texturepack, I recommend you **[SKIP THIS SECTION](
 
 ## You're done!!!
 
-- Congrats! you have created a factorio resource pack with TextureBase!
+**Congrats! you have created a factorio resource pack with TextureBase!**
+
 - There is no obligation to do this, but I would be soooo happy if you spread the word & include e.g. "made with TextureBase @ https://mods.factorio.com/mod/texturebase" in your resource pack description :)
 - You might also consider removing / modifying this *README.md*, *LICENCE*, *.gitattributes*, *.git* and *changelog.txt* from your texturepack.
 - If you haven't already, exchange the default thumbnail.png with a texturepack icon of your own (144x144 resolution).
